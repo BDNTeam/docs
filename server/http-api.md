@@ -127,7 +127,8 @@ http://localhost/api/v1/outputs?public_key=TsDeu3QLojKNAqNEopcLb8GY6D3Z6J17rNrpV
  HTTP/1.1 200 OK
  Content-Type: application/json
 
- [
+ ```
+[
    {
      "output_index": 0,
      "transaction_id": "6233762c91b4e619fbe162848f7f157293c31b3b52fe3ad405a34ffb07cddbf1"
@@ -137,6 +138,7 @@ http://localhost/api/v1/outputs?public_key=TsDeu3QLojKNAqNEopcLb8GY6D3Z6J17rNrpV
      "transaction_id": "2d431073e1477f3073a4693ac7ff9be5634751de1b8abaa1f4e19548ef0b4b0e"
    }
  ]
+ ```
  
 *statuscode 200*: 返回交易的列表数据，格式如上。
 
@@ -170,6 +172,7 @@ http://localhost/api/v1/assets/?search=bdn
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```
 [
     {
         "data": {"msg": "Hello ChainDB 1!"},
@@ -184,6 +187,7 @@ Content-type: application/json
         "id": "fa6bcb6a8fdea3dc2a860fcdc0e0c63c9cf5b25da8b02a4db4fb6a2d36d27791"
     }
 ]
+```
 
 *resheader Content-Type*: ``application/json``。
 
@@ -218,6 +222,7 @@ http://localhost/api/v1/metadata/?search=bdn
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```
 [
     {
         "metadata": {"metakey1": "Hello ChainDB 1!"},
@@ -232,6 +237,7 @@ Content-type: application/json
         "id": "fa6bcb6a8fdea3dc2a860fcdc0e0c63c9cf5b25da8b02a4db4fb6a2d36d27791"
     }
 ]
+```
 
 *resheader Content-Type*: ``application/json``。
 
@@ -255,6 +261,7 @@ http://localhost/api/v1/validators
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```
 [
     {
         "pub_key": {
@@ -271,6 +278,7 @@ Content-type: application/json
          "power": 5
     }
 ]
+```
 
 *resheader Content-Type*: ``application/json``。
 
@@ -302,6 +310,7 @@ http://localhost/api/v1/block_list
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```
 [
   {
     "id": "5bd9670657f9fd000654dd11",
@@ -327,6 +336,7 @@ Content-type: application/json
     "transaction_count": 0
   }
 ]
+```
 
 **Get请求:: /api/v1/blocks/{block_height}**
 
@@ -393,10 +403,12 @@ http://localhost/api/v1/global_search?tx_or_block_id=6233762c91b4e619fbe162848f7
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```
 {
-"result": true,
-"result_type": "block"
+    "result": true,
+    "result_type": "block"
 }
+```
 
 **Get请求:: /api/v1/transaction_count**
 
@@ -415,10 +427,11 @@ http://localhost/api/v1/transaction_count
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```
 {
-"count": 5
+    "count": 5
 }
-
+```
 
 **Get请求:: /api/v1/last_block**
 
@@ -436,8 +449,10 @@ http://localhost/api/v1/last_block
 HTTP/1.1 200 OK
 Content-type: application/json
 
+```
 {
     "app_hash": "4fb0ca93c120c72a05b87cadc21dad00c6c5df3012ca4463eeca3a6f535bdb5e",
     "height": 3,
     "transactions": []
 }
+```
