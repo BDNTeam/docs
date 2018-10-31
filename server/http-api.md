@@ -148,6 +148,7 @@ http://localhost/api/v1/assets/?search=bdn
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 [
     {
         "data": {"msg": "Hello ChainDB 1!"},
@@ -193,6 +194,7 @@ http://localhost/api/v1/metadata/?search=bdn
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 [
     {
         "metadata": {"metakey1": "Hello ChainDB 1!"},
@@ -224,6 +226,7 @@ http://localhost/api/v1/validators
 **Example response**:
 HTTP/1.1 200 OK
 Content-type: application/json
+
 [
     {
         "pub_key": {
@@ -265,6 +268,7 @@ http://localhost/api/v1/block_list
 
 HTTP/1.1 200 OK
 Content-type: application/json
+
 [
 	{
 		"id": "5bd9670657f9fd000654dd11",
@@ -342,6 +346,7 @@ http://localhost/api/v1/global_search?tx_or_block_id=6233762c91b4e619fbe162848f7
 
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
 "result": true,
 "result_type": "block"
@@ -360,6 +365,7 @@ http://localhost/api/v1/transaction_count
 
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
 "count": 5
 }
@@ -378,6 +384,7 @@ http://localhost/api/v1/last_block
 
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "app_hash": "4fb0ca93c120c72a05b87cadc21dad00c6c5df3012ca4463eeca3a6f535bdb5e",
     "height": 3,
